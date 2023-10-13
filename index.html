@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Convertor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>Binary/Decimal Convertor</h1>
+    </header>
+    <section>
+      <div class="container">
+        <h3>Select your options</h3>
+        <label>FROM:</label>
+        <input list="options" placeholder="Decimal" id="from-option" />
+        <datalist id="options">
+          <option value="Binary"></option>
+          <option value="Decimal"></option>
+        </datalist>
+        <label>TO:</label>
+        <input list="options" placeholder="Binary" id="to-option" />
+        <label>Enter your number:</label>
+        <input type="number" placeholder="1011101" id="number-input" />
+        <button class="convert">Convert</button>
+        <button class="reset">Reset</button>
+        <p class="result"></p>
+      </div>
+    </section>
+    <footer>
+      <div class="links">
+        <a href="https://www.instagram.com/yyazanalqaderi/">Instagram</a>
+        <a href="https://github.com/YznAlqadery">GitHub</a>
+      </div>
+      <p class="foot-p">&copy Yazan Alqadery. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
